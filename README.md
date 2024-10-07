@@ -38,7 +38,6 @@ Screenshots
 API Documentation
 
 - https://openweathermap.org/
-- https://api.openweathermap.org/data/2.5/weather?units=metric&q=londan&appid=***************
 
 Support
 
