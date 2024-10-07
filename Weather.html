@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Weather.css" />
+    <link rel="icon" href="Images/clouds.png" />
+    <style>
+      .search input {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search for City"
+          spellcheck="false"
+          class="search-inp"
+        />
+        <button class="search-btn">
+          <img src="Images/search.png" alt="icon" class="search-img" />
+        </button>
+      </div>
+      <div class="weather">
+        <img
+          src="Images/clear.png"
+          alt="weather-icon"
+          class="weather-icon"
+        />
+        <h1 class="temp">0°C</h1>
+        <h2 class="city">City Name</h2>
+        <div class="details">
+          <div class="col">
+            <img src="Images/humidity.png" alt="humidity" />
+            <div>
+              <p class="humidity">0%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="Images/wind.png" alt="humidity" />
+            <div>
+              <p class="wind">0km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+             <h4 class ="feel">FL : </h4>
+                <p style="display: inline-block;" class="feels_like">0°C</p>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Weather.js"></script>
+  </body>
+</html>
