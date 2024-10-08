@@ -29,16 +29,28 @@ async function checkWeather(city) {
     )}°C`;
 
     if (data.weather[0].main == "Clouds") {
+      weatherIcon.classList.remove("margin");
       weatherIcon.src = "Images/clouds.png";
     } else if (data.weather[0].main == "Clear") {
+      weatherIcon.classList.remove("margin");
       weatherIcon.src = "Images/clear.png";
     } else if (data.weather[0].main == "Rain") {
+      weatherIcon.classList.remove("margin");
       weatherIcon.src = "Images/rain.png";
     } else if (data.weather[0].main == "Drizzle") {
+      weatherIcon.classList.remove("margin");
       weatherIcon.src = "Images/drizzle.png";
     } else if (data.weather[0].main == "Mist") {
+      weatherIcon.classList.remove("margin");
       weatherIcon.src = "Images/mist.png";
+    } else if (data.weather[0].main == "Haze") {
+      weatherIcon.src = "Images/haze.png";
+      weatherIcon.classList.add("margin");
+    } else if (data.weather[0].main == "Snow") {
+      weatherIcon.classList.remove("margin");
+      weatherIcon.src = "Images/snow.png";
     } else {
+      weatherIcon.classList.remove("margin");
       weatherIcon.src = "Images/search.png";
     }
   } catch {
@@ -51,7 +63,7 @@ async function checkWeather(city) {
     document.querySelector("body").classList.add("red");
     setTimeout(() => {
       document.querySelector("body").classList.remove("red");
-    }, 300);
+    }, 500);
     setTimeout(() => {
       document.querySelector(".city").innerHTML = "City Name";
     }, 500);
