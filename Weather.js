@@ -1,4 +1,4 @@
-const apiKey = "( Enter your key )";
+const apiKey = "your-api-key"; // replace with your OpenWeatherMap API key
 const apiUrl =
   "( Sign in and get the api link - https://openweathermap.org/ );
 
