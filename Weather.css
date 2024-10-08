@@ -99,3 +99,7 @@ body {
 .red{
     background-color: red;
 }
+.margin{
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
