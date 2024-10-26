@@ -63,7 +63,7 @@ This is a personal project by **SK Akram**, and external contributions are not a
 
 ## ⚙️ Installation
 
-To run the project locally:
+To run the project locally:.
 
 ```bash
 # Step 1: Clone the repository
